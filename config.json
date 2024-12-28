@@ -1,16 +1,16 @@
 {
   "Siti": {
          "StreamingCommunity": {
-             "domain": "asia"
+             "domain": "restaurant"
          },
          "Filmpertutti": {
-             "domain": "diy"
+             "domain": "motorcycles"
          },
          "Tantifilm":{
-             "domain": "bond"
+             "domain": "be"
          },
          "Mysterius":{
-             "enabled": "0"    
+             "enabled": "1"    
          },
         "LordChannel":{
              "domain":"com"
@@ -22,7 +22,7 @@
             "domain":"so"
         },
         "SkyStreaming":{
-            "domain":"guru"
+            "domain":"my"
         },
         "DaddyLiveHD":{
             "enabled":"1"
