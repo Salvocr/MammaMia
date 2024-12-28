@@ -111,8 +111,8 @@ async def search_movie(showname,date,client):
     try:
         showname = showname.replace(" ","+")
         headers = fake_headers.generate()
-        headers['Referer'] = 'https://cb01.technology/'
-        query = f'https://cb01.technology/?s={showname}'
+        headers['Referer'] = 'https://cineblog01.diy/'
+        query = f'https://cineblog01.diy/?s={showname}'
         response = await client.get(query,headers=headers)
         soup = BeautifulSoup(response.text, 'lxml',parse_only=SoupStrainer('div', class_='card-content'))
         cards = soup.find_all('div', class_='card-content')
@@ -141,8 +141,8 @@ async def search_series(showname,date,client):
     try:
         showname = showname.replace(" ","+")
         headers = fake_headers.generate()
-        headers['Referer'] = 'https://cb01.technology/serietv/'
-        query = f'https://cb01.technology/serietv/?s={showname}'
+        headers['Referer'] = 'https://cineblog01.diy/serietv/'
+        query = f'https://cineblog01.diy/serietv/?s={showname}'
         response = await client.get(query,headers=headers)
         soup = BeautifulSoup(response.text, 'lxml',parse_only=SoupStrainer('div', class_='card-content'))
         cards = soup.find_all('div', class_='card-content')
